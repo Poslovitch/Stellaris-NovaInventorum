@@ -1,0 +1,107 @@
+namespace = "ni_skyflowers"
+
+### Success events
+# They orbit around the planet, acts as normal flowers. Maybe were they created by someone? Sure: they're useless.
+ship_event = {
+	id = ni_skyflowers.1
+	title = ni_skyflowers.1.name
+	desc = ni_skyflowers.1.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = root
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ni_skyflowers.1.a
+		owner = {
+			add_modifier = {
+				modifier = "titanic_life"
+				days = -1
+			}
+		}
+	}
+}
+
+# They orbit around the planet and communicate together. Sure: they're not natural. Who created them?
+ship_event = {
+	id = ni_skyflowers.2
+	title = ni_skyflowers.2.name
+	desc = ni_skyflowers.2.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_alien_nature
+	location = root
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ni_skyflowers.2.a
+		owner = {
+			add_modifier = {
+				modifier = "titanic_life"
+				days = -1
+			}
+		}
+		from = {
+			orbital_deposit_tile = { 
+				add_deposit = d_vast_society_deposit
+			}
+		}
+	}
+}
+
+### Failure events
+# Safety first : Skyflowers move too fast to be surveyed
+ship_event = {
+	id = ni_skyflowers.11
+	title = ni_skyflowers.11.name
+	desc = ni_skyflowers.11.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_ship_bridge
+	location = root
+	
+	is_triggered_only = yes
+	
+	option{
+		name = ni_skyflowers.11.a
+	}
+}
+
+# Complexity of these flowers has blaffed scientists
+ship_event = {
+	id = ni_skyflowers.12
+	title = ni_skyflowers.12.name
+	desc = ni_skyflowers.12.desc
+	picture = GFX_evt_alien_nature
+	show_sound = event_ship_bridge
+	location = root
+	
+	is_triggered_only = yes
+	
+	option{
+		name = ni_skyflowers.12.a
+		leader = { add_experience = 100 }
+	}
+}
+
+### Critical failure event
+# The ship crashed into a Skyflower
+ship_event = {
+	id = ni_skyflowers.21
+	title = ni_skyflowers.21.name
+	desc = ni_skyflowers.21.desc
+	picture = GFX_evt_ship_explosion
+	show_sound = event_ship_explosion
+	location = root
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		kill_leader = { type = scientist show_notification = no }
+		fleet = { destroy_fleet = this }
+	}
+			
+	option = {
+		name = ni_skyflowers.21.a
+	}
+}

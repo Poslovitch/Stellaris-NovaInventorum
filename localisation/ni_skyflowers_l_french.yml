@@ -1,0 +1,23 @@
+﻿l_french:
+ NI_SKYFLOWERS_CAT: "Fleurs Célestes"
+ NI_SKYFLOWERS_CAT_DESC: "D'étranges formes mouvantes ont été repérées dans le ciel de la planète [From.GetName].\nSemblables à d'immenses fleurs, elles dérivent dans l'atmosphère de la planète, apparemment sans but.\n\nNos spécialistes nous suggèrent d'étudier plus en détail ces étranges formes de vie."
+ 
+ ni_skyflowers.1.name: "De simples fleurs..."
+ ni_skyflowers.1.desc: "Après plusieurs analyses, il apparaît que les Fleurs Célestes de [From.GetName] ne présentent aucun intérêt. Elles agissent comme de simples fleurs, usant des forts vents stratosphériques et de leurs étranges ballons de gaz pour flotter dans les airs.\n\nNos scientifiques s'interrogent sur l'origine de ces plantes pour le moins particulières. Sont-elles le résultat d'une longue évolution ou sont-elles les créations d'une espèce disparue depuis des millénaires? Au vu du faible intérêt des spécialistes pour ce sujet, il est fort probable que nous nous contenterons de considérer ces Fleurs Célestes comme des oeuvres d'un art révolu."
+ ni_skyflowers.1.a: "Concentrons-nous sur quelque chose de plus intéressant..."
+ 
+ ni_skyflowers.2.name: "Des fleurs intriguantes"
+ ni_skyflowers.2.desc: "De nombreuses et fructueuses analyses nous ont conduit à penser que les Fleurs Célestes de [From.GetName] sont des formes de vie douées d'intelligence.\nEn effet, nous avons découvert qu'elles communiquaient entre elles par le biais d'impulsions électromagnétiques. De plus, contrairement à ce que nous pensions, ces gigantesques fleurs ne dérivent pas dans le ciel, mais plutôt se dirigent là où de la nourriture se trouve, guidées par les signaux des autres Fleurs. Nous avons ainsi pu observer trois Fleurs Célestes ensemble, se nourrissant d'une sorte de plancton aérien.\n\nNos scientifiques s'interrogent sur l'origine de ces plantes pour le moins particulières. Il paraît évident qu'elles ne sont pas le fruit d'une longue évolution.\n\nMais alors, qui les a créées?"
+ ni_skyflowers.2.a: "Un mystère auquel nous n'aurons pas de réponses..."
+
+ ni_skyflowers.11.name: "Sécurité avant tout"
+ ni_skyflowers.11.desc: "L'officier scientifique [Root.GetLeaderName] a décidé de mettre un terme à l'analyse des Fleurs Célestes sur [From.GetName].\n\nCelles-ci semblent s'affoler à chaque fois que le vaisseau scientifique tente de les analyser. Elles émettent alors une puissante onde électromagnétique ayant manqué plusieurs fois de faire perdre le contrôle du vaisseau."
+ ni_skyflowers.11.a: "Laissons-les en paix."
+ 
+ ni_skyflowers.12.name: "Une étrange complexité"
+ ni_skyflowers.12.desc: "Les analyses et les scans ont fait part d'une étrange complexité chimique et organique dans la composition des Fleurs Célestes de [From.GetName].\n\nMalheureusement, nos connaissances insuffisantes nous empêchent de comprendre la raison et les conséquences d'une telle complexité."
+ ni_skyflowers.12.a: "Nous devrons nous contenter de ce que nous savons..."
+ 
+ ni_skyflowers.21.name: "Perte de signal"
+ ni_skyflowers.21.desc: "Nous avons perdu le signal avec le vaisseau [Root.GetFleetName] il y a quelques instants.\nL'officier scientifique [Root.GetLeaderName] nous faisait part de son rapport sur l'observation et l'analyse des Fleurs Célestes de [From.From.GetName].\n\nSelon lui, ces plantes dépassent de loin la compréhension de nos experts.\n\nMalheureusement, il n'aura pas eu le temps d'effectuer d'analyses supplémentaires."
+ ni_skyflowers.21.a: "Une perte déplorable..."

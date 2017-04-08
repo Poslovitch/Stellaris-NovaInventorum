@@ -1,0 +1,13 @@
+﻿# Nova Inventorum anomaly
+
+# Skyflowers
+anomaly = {
+	event = ni_skyflowers.1
+	category = "NI_SKYFLOWERS_CAT"
+	
+	weight = 1
+	
+	potential = {
+		always = yes
+	}
+}

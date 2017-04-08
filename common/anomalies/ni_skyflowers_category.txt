@@ -1,0 +1,46 @@
+﻿# Nova Inventorum category
+
+# Skyflowers
+anomaly_category = {
+	key = "NI_SKYFLOWERS_CAT"
+	desc = "NI_SKYFLOWERS_CAT_DESC"
+	picture = GFX_evt_alien_nature
+	level = 3
+	risk = 40
+	
+	spawn_chance = {
+		modifier = {
+			add = 1
+			is_planet_class = pc_savannah
+			root = {
+				not = { has_global_flag = ni_skyflowers_found }
+			}
+		}
+	}
+	
+	on_spawn = {
+		set_global_flag = ni_skyflowers_found
+	}
+	
+	on_success = {
+		random_list = {
+			90 = { ship_event = { id = ni_skyflowers.1 } }
+			10 = { ship_event = { id = ni_skyflowers.2 } }
+		}
+	}
+	
+	on_fail = {
+		random_list = {
+			70 = { ship_event = { id = ni_skyflowers.11 } } # Safety first : skyflowers move too fast
+			30 = { ship_event = { id = ni_skyflowers.12 } } # Complexity of these flowers has blaffed scientists
+		}
+	}
+	
+	on_critical_fail = {
+		random_list = {
+			60 = { ship_event = { id = ni_skyflowers.11 } } # Safety first : skyflowers move too fast
+			30 = { ship_event = { id = ni_skyflowers.12 } } # Complexity of these flowers has blaffed scientists
+			10 = { ship_event = { id = ni_skyflowers.21 } } # The ship crashed into a skyflower
+		}
+	}
+}
